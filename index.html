@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Леонид Кокорев — стабильные сервисы и понятные процессы</title>
+    <title>Стабильные сервисы и понятные процессы — Леонид Кокорев</title>
     <meta
       name="description"
-      content="Леонид Кокорев помогает предпринимателям сделать цифровые сервисы стабильными, отчётность прозрачной и команды спокойными. Премиум-решения и MVP-пилоты без технического жаргона."
+      content="Навожу порядок в системах, автоматизирую рутину и запускаю пилоты, чтобы ваши сервисы работали стабильно, а команда занималась ростом бизнеса."
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
@@ -18,7 +18,7 @@
       <div class="navbar">
         <a class="navbar__brand" href="#top">LEONID.PRO</a>
         <nav class="navbar__links">
-          <a href="#hero">Результат</a>
+          <a href="#benefits">Результат</a>
           <a href="#segments">Кому подходит</a>
           <a href="#offers">Офферы</a>
           <a href="#cases">Кейсы</a>
@@ -30,8 +30,8 @@
     </header>
 
     <main id="top">
-      <section class="hero section" id="hero">
-        <div class="hero__content">
+      <section class="hero" id="hero">
+        <div class="hero-content">
           <p class="section__label">Про деньги и спокойствие</p>
           <h1 class="hero__title">Ваши сервисы — стабильны. Команда — спокойна. Рутина — автоматизирована.</h1>
           <p class="hero__lead">
@@ -41,7 +41,22 @@
             <a class="btn btn--primary" href="#offer-premium" data-analytics="cta-premium">Премиум-решение для бизнеса</a>
             <a class="btn btn--ghost" href="#offer-mvp" data-analytics="cta-mvp">Запустить MVP-пилот</a>
           </div>
-          <div class="hero__stats">
+        </div>
+      </section>
+
+      <section class="section benefits" id="benefits">
+        <h2 class="section__title">Что вы получаете</h2>
+        <div class="benefits-grid">
+          <article class="suite-card benefits-card">
+            <div>
+              <h3>Что получаете</h3>
+              <p>Быстрый «рентген» бизнес-критичных процессов, понятные цифры по доступности и реакции, автоматизация повторяющихся задач и передача регламентов команде.</p>
+            </div>
+            <div>
+              <p><strong>Мини-гарантия:</strong> пилот не даёт пользы — стопим без обязательств. Оплата только по принятым этапам.</p>
+            </div>
+          </article>
+          <div class="benefits-stats">
             <div class="stat-card">
               <strong>99,8% стабильности</strong>
               <span>на ключевых стендах финансовой платформы</span>
@@ -53,18 +68,6 @@
             <div class="stat-card">
               <strong>−30% аварийности</strong>
               <span>за счёт регламентов и прозрачной отчётности</span>
-            </div>
-          </div>
-        </div>
-        <div class="hero__preview">
-          <div class="suite-card" style="height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
-            <div>
-              <h3>Что получаете</h3>
-              <p>Быстрый «рентген» бизнес-критичных процессов, понятные цифры по доступности и реакции, автоматизация повторяющихся задач и передача регламентов команде.</p>
-            </div>
-            <div>
-              <p><strong>Мини-гарантия:</strong> пилот не даёт пользы — стопим без обязательств. Оплата только по принятым этапам.</p>
-              <p class="section__label" style="margin-top: 20px;">Обновлено 24 сентября 2025</p>
             </div>
           </div>
         </div>
@@ -203,7 +206,7 @@
         <div class="highlights" style="margin-top: 48px;">
           <article class="highlight-card">
             <h3>Прозрачность календаря</h3>
-            <p>Ближайший свободный слот на консультацию — 26 сентября 2025. Можно забронировать прямой созвон или оставить заявку ниже.</p>
+            <p>Доступен открытый календарь с ближайшими слотами для консультаций — бронируете созвон или оставляете заявку, как удобнее.</p>
           </article>
           <article class="highlight-card">
             <h3>Снижение риска</h3>
@@ -256,7 +259,7 @@
             </div>
             <div class="form-field">
               <label for="context">С чем помочь?</label>
-              <textarea id="context" name="context" rows="5" placeholder="Расскажите о сервисе, проблеме и желаемом результате" required></textarea>
+              <textarea id="context" name="context" rows="5" placeholder="Расскажите о сервисе, проблеме и желаемом результате" required minlength="10"></textarea>
             </div>
             <div class="form-field">
               <label for="preferred">Как связаться?</label>
@@ -300,7 +303,7 @@
       <div class="footer__inner">
         <span>© 2025 Леонид Кокорев. Стабильные сервисы и понятные процессы.</span>
         <nav>
-          <a href="#hero">Результат</a>
+          <a href="#benefits">Результат</a>
           <a href="#offers">Офферы</a>
           <a href="#cases">Кейсы</a>
           <a href="#process">Процесс</a>
