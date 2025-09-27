@@ -205,8 +205,9 @@ main {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  max-width: 700px;
-  margin: 0 auto 100px;
+  width: 100%;
+  max-width: none;
+  margin: 0 0 100px;
   padding: 80px 32px;
   text-align: left;
   background: var(--surface);
@@ -232,6 +233,41 @@ main {
   color: var(--text-muted);
   margin: 0;
   max-width: 560px;
+}
+
+.hero-pillars {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.hero-pillar {
+  background: rgba(15, 23, 42, 0.72);
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(148, 163, 184, 0.14);
+  padding: 22px 24px;
+  box-shadow: 0 22px 46px rgba(2, 6, 23, 0.32);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.hero-pillar:hover,
+.hero-pillar:focus-within {
+  transform: translateY(-6px);
+  border-color: rgba(37, 99, 235, 0.45);
+  box-shadow: 0 28px 60px rgba(37, 99, 235, 0.24);
+}
+
+.hero-pillar__title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 10px;
+}
+
+.hero-pillar__text {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.98rem;
 }
 
 .hero__actions {
@@ -295,6 +331,10 @@ main {
     margin-bottom: 72px;
   }
 
+  .hero-pillars {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .benefits-grid {
     grid-template-columns: 1fr;
   }
@@ -304,6 +344,14 @@ main {
   .hero {
     padding: 48px 24px;
     gap: 20px;
+  }
+
+  .hero-pillars {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-pillar {
+    padding: 18px 20px;
   }
 
   .hero__actions {
@@ -320,6 +368,16 @@ main {
 
   .benefits-stats {
     gap: 16px;
+  }
+
+  footer .footer__inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .badges {
+    flex-wrap: wrap;
   }
 }
 
@@ -541,6 +599,25 @@ main {
   overflow: hidden;
 }
 
+.service-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.service-card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.service-card .btn {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
 .service-card::after,
 .project-card::after,
 .suite-card::after {
@@ -665,6 +742,10 @@ footer .footer__inner {
   gap: 16px;
 }
 
+footer .footer__bar {
+  align-items: center;
+}
+
 footer nav {
   display: flex;
   gap: 18px;
@@ -673,7 +754,7 @@ footer nav {
 .badges {
   display: flex;
   gap: 18px;
-  margin-top: 18px;
+  margin-top: 0;
 }
 
 .badge {
